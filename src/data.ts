@@ -67,6 +67,7 @@ export const notifications: Notification[] = [
     heading: "Welcome to Don't Make Art!",
     message:
       "Don't Make Art! is a way of exorcising your demons of creative self-doubt. Tap this message to read more.",
+    previewText: "Don't Make Art info text",
     timestamp: new Date(),
   },
 ]

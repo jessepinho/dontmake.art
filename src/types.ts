@@ -17,6 +17,7 @@ interface BaseNotification {
   timestamp: Date
   authorName?: string
   authorCity?: string
+  previewText?: string
 }
 
 interface NotificationWithHeading extends BaseNotification {
