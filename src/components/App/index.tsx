@@ -4,6 +4,7 @@ import './reset.css'
 
 import Clock from '../Clock'
 import Notification from '../Notification'
+import { notifications } from '../../data'
 import * as Styles from './styles'
 
 const App: React.FC<{}> = props => (
@@ -15,13 +16,9 @@ const App: React.FC<{}> = props => (
       </Styles.ClockWrapper>
       <Styles.NotificationsWrapper>
         <Styles.Notifications>
-          <Notification />
-          <Notification />
-          <Notification />
-          <Notification />
-          <Notification />
-          <Notification />
-          <Notification />
+          {notifications.map(notification => (
+            <Notification notification={notification} />
+          ))}
         </Styles.Notifications>
       </Styles.NotificationsWrapper>
     </Styles.Main>

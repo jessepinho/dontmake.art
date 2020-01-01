@@ -1,18 +1,26 @@
 import React from 'react'
 
+import { apps } from '../../data'
+import { Notification as NotificationType } from '../../types'
 import * as Styles from './styles'
 
-const Notification: React.FC<{}> = props => (
+const Notification: React.FC<{ notification: NotificationType }> = ({
+  notification,
+}) => (
   <Styles.Article>
     <Styles.Metadata>
-      <Styles.AppIconFigure color="rgb(108, 208, 94)" />
-      <Styles.AppName>WhatsUp</Styles.AppName>
+      <Styles.AppIconFigure color={apps[notification.app].color} />
+      <Styles.AppName>{apps[notification.app].name}</Styles.AppName>
       <Styles.Time>1m ago</Styles.Time>
     </Styles.Metadata>
-    <Styles.Heading>Art Prof</Styles.Heading>
-    <Styles.Message>
-      This has already been done a bunch of times. Try something new.
-    </Styles.Message>
+
+    {notification.heading && (
+      <Styles.Heading>{notification.heading}</Styles.Heading>
+    )}
+
+    {notification.message && (
+      <Styles.Message>{notification.message}</Styles.Message>
+    )}
   </Styles.Article>
 )
 
