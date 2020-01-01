@@ -36,7 +36,9 @@ export const notifications: Notification[] = [
   {
     id: '2',
     app: AppName.Reminders,
-    heading: 'No one will see your piece. Why bother?',
+    heading: 'Not many people will see your piece.',
+    message:
+      "It'll be a lot of work for little to no reward. Is it worth the effort?",
     authorName: 'Jesse',
     authorCity: 'Berlin',
     timestamp: new Date(),
