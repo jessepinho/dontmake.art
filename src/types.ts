@@ -4,6 +4,7 @@ export interface App {
 }
 
 export enum AppName {
+  Compass = 'Compass',
   Tinder = 'Tinder',
   Reminders = 'Reminders',
   WhatsApp = 'WhatsApp',

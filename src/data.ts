@@ -13,6 +13,10 @@ export const apps: { [key: string]: App } = {
     name: AppName.WhatsApp,
     color: 'rgb(108, 208, 94)',
   },
+  [AppName.Compass]: {
+    name: AppName.Compass,
+    color: 'black',
+  },
 }
 
 export const notifications: Notification[] = [
@@ -32,6 +36,11 @@ export const notifications: Notification[] = [
     heading: 'New Message',
     message:
       "there's a 100% chance that someone out there is better at your art",
+    timestamp: new Date(),
+  },
+  {
+    app: AppName.Compass,
+    message: 'Is this supposed to be crooked?',
     timestamp: new Date(),
   },
 ]
