@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './reset.css'
+
 import Clock from '../Clock'
 import * as Styles from './styles'
 

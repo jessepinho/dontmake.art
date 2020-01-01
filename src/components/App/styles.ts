@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from 'styled-components'
-import 'normalize.css'
 
 import background from './background.jpg'
 
