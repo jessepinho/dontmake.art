@@ -17,6 +17,8 @@ export const AppIconFigure = styled.figure<{ color: string }>`
   border-radius: 0.35rem;
   width: 1.5rem;
   height: 1.5rem;
+  flex-shrink: 0;
+  flex-grow: 0;
 
   margin-right: 0.5rem;
 `
@@ -27,12 +29,19 @@ export const AppName = styled.div`
   letter-spacing: 0.5px;
   text-transform: uppercase;
 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
   flex-grow: 1;
+
+  display: flex;
+  align-items: center;
 `
 
 export const Metadata = styled.footer`
   display: flex;
-  align-items: center;
+  align-items: stretch;
 
   margin-bottom: 0.5rem;
 `
@@ -41,6 +50,13 @@ export const TimeAndAuthor = styled.div`
   color: rgba(0, 0, 0, 0.75);
   font-weight: 300;
   letter-spacing: 0.5px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  display: flex;
+  align-items: center;
 `
 
 export const Heading = styled.h2`

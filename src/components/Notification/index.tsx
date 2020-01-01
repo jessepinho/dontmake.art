@@ -12,8 +12,7 @@ const Notification: React.FC<{ notification: NotificationType }> = ({
       <Styles.AppIconFigure color={apps[notification.app].color} />
       <Styles.AppName>{apps[notification.app].name}</Styles.AppName>
       <Styles.TimeAndAuthor>
-        <time>1m ago</time> &bull; {notification.authorName} in{' '}
-        {notification.authorCity}
+        1m ago &bull; {notification.authorName} in {notification.authorCity}
       </Styles.TimeAndAuthor>
     </Styles.Metadata>
 
