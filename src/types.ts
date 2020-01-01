@@ -4,8 +4,9 @@ export interface App {
 }
 
 export enum AppName {
-  WhatsApp = 'WhatsApp',
+  Tinder = 'Tinder',
   Reminders = 'Reminders',
+  WhatsApp = 'WhatsApp',
 }
 
 interface BaseNotification {
