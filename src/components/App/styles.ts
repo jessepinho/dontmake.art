@@ -3,6 +3,11 @@ import styled, { createGlobalStyle } from 'styled-components'
 import background from './background.jpg'
 
 export const Main = styled.main`
+  background-color: rgb(159, 159, 159);
+  background-image: url('${background}');
+  background-repeat: no-repeat;
+  background-size: cover;
+
   display: flex;
   flex-direction: column;
 
@@ -11,6 +16,8 @@ export const Main = styled.main`
   right: 0;
   bottom: 0;
   left: 0;
+
+  max-width: 600px;
 `
 
 export const ClockWrapper = styled.div`
@@ -38,11 +45,6 @@ export const BackgroundCSS = createGlobalStyle`
   }
 
   body {
-    background-color: rgb(159, 159, 159);
-    background-image: url('${background}');
-    background-repeat: no-repeat;
-    background-size: cover;
-
     /* https://css-tricks.com/snippets/css/system-font-stack/ */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
