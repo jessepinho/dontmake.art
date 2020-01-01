@@ -5,10 +5,12 @@ import './reset.css'
 import Clock from '../Clock'
 import Notification from '../Notification'
 import { notifications } from '../../data'
+import SEO from '../seo'
 import * as Styles from './styles'
 
 const App: React.FC<{}> = props => (
   <>
+    <SEO title="Don't make art!" />
     <Styles.BackgroundCSS />
     <Styles.Main>
       <Styles.ClockWrapper>
