@@ -17,7 +17,7 @@ const App: React.FC<{}> = props => (
       <Styles.NotificationsWrapper>
         <Styles.Notifications>
           {notifications.map(notification => (
-            <Notification notification={notification} />
+            <Notification key={notification.id} notification={notification} />
           ))}
         </Styles.Notifications>
       </Styles.NotificationsWrapper>

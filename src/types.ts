@@ -11,6 +11,7 @@ export enum AppName {
 }
 
 interface BaseNotification {
+  id: string
   app: AppName
   timestamp: Date
 }

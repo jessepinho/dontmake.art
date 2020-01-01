@@ -21,17 +21,20 @@ export const apps: { [key: string]: App } = {
 
 export const notifications: Notification[] = [
   {
+    id: '1',
     app: AppName.WhatsApp,
     heading: 'Art Professor',
     message: 'This has already been done a bunch of times. Try something new.',
     timestamp: new Date(),
   },
   {
+    id: '2',
     app: AppName.Reminders,
     heading: 'No one will see your piece. Why bother?',
     timestamp: new Date(),
   },
   {
+    id: '3',
     app: AppName.Tinder,
     heading: 'New Message',
     message:
@@ -39,6 +42,7 @@ export const notifications: Notification[] = [
     timestamp: new Date(),
   },
   {
+    id: '4',
     app: AppName.Compass,
     message: 'Is this supposed to be crooked?',
     timestamp: new Date(),
