@@ -20,13 +20,21 @@ export const Overlay = styled.div`
   left: 0;
 
   backdrop-filter: blur(10px);
-
-  display: flex;
-  align-items: center;
-  justify-content: stretch;
+  background-color: rgba(255, 255, 255, 0.4);
 `
 
-export const NotificationWrapper = styled.div`
+export const NotificationsWrapper = styled.div`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
   padding: 0 0.5rem;
   width: 100%;
+
+  display: grid;
+  grid-row-gap: 0.5rem;
+`
+
+export const Link = styled.a`
+  color: inherit;
 `

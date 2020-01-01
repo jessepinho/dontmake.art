@@ -1,3 +1,5 @@
+import React from 'react'
+
 export interface App {
   name: AppName
   color: string
@@ -17,17 +19,27 @@ interface BaseNotification {
   timestamp: Date
   authorName?: string
   authorCity?: string
-  previewText?: string
 }
 
 interface NotificationWithHeading extends BaseNotification {
   heading: string
   message?: string
+  children?: React.ReactNode
 }
 
 interface NotificationWithMessage extends BaseNotification {
   heading?: string
   message: string
+  children?: React.ReactNode
 }
 
-export type Notification = NotificationWithHeading | NotificationWithMessage
+interface NotificationWithChildren extends BaseNotification {
+  heading?: string
+  message?: string
+  children: React.ReactNode
+}
+
+export type Notification =
+  | NotificationWithHeading
+  | NotificationWithMessage
+  | NotificationWithChildren

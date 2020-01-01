@@ -23,6 +23,15 @@ export const apps: { [key: string]: App } = {
   },
 }
 
+export const infoNotification: Notification = {
+  id: '0',
+  app: AppName.Info,
+  heading: "Welcome to Don't Make Art!",
+  message:
+    "Don't Make Art! is a way of exorcising your demons of creative self-doubt. Tap this message to read more.",
+  timestamp: new Date(),
+}
+
 export const notifications: Notification[] = [
   {
     id: '1',
@@ -62,12 +71,22 @@ export const notifications: Notification[] = [
     timestamp: new Date(),
   },
   {
-    id: '0',
-    app: AppName.Info,
-    heading: "Welcome to Don't Make Art!",
+    id: '5',
+    app: AppName.WhatsApp,
+    heading: "I'm-Mean",
     message:
-      "Don't Make Art! is a way of exorcising your demons of creative self-doubt. Tap this message to read more.",
-    previewText: "Don't Make Art info text",
+      "Your idea will lose all it's splendor by the time you're even half way through realising it.",
+    authorName: 'Amin',
+    authorCity: 'Berlin',
+    timestamp: new Date(),
+  },
+  {
+    id: '6',
+    app: AppName.Reminders,
+    message:
+      "Shit takes time. You won't even finish one of your top 10 ideas by the end of the year.",
+    authorName: 'Amin',
+    authorCity: 'Berlin',
     timestamp: new Date(),
   },
 ]
