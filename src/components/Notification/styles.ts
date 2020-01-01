@@ -6,6 +6,9 @@ export const Article = styled.article`
   border-radius: 1rem;
   min-height: 3rem;
   padding: 0.75rem;
+
+  max-width: 100%;
+  overflow: hidden;
 `
 
 export const AppIconFigure = styled.figure<{ color: string }>`
@@ -44,6 +47,10 @@ export const Heading = styled.h2`
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.5rem;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 `
 
 export const Message = styled.p`

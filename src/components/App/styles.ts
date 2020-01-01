@@ -33,6 +33,10 @@ export const Notifications = styled.section`
 `
 
 export const BackgroundCSS = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     background-color: rgb(159, 159, 159);
     background-image: url('${background}');
