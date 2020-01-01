@@ -25,12 +25,16 @@ export const notifications: Notification[] = [
     app: AppName.WhatsApp,
     heading: 'Art Professor',
     message: 'This has already been done a bunch of times. Try something new.',
+    authorName: 'Jesse',
+    authorCity: 'Berlin',
     timestamp: new Date(),
   },
   {
     id: '2',
     app: AppName.Reminders,
     heading: 'No one will see your piece. Why bother?',
+    authorName: 'Jesse',
+    authorCity: 'Berlin',
     timestamp: new Date(),
   },
   {
@@ -38,13 +42,17 @@ export const notifications: Notification[] = [
     app: AppName.Tinder,
     heading: 'New Message',
     message:
-      "there's a 100% chance that someone out there is better at your art",
+      "there's a 100% chance that someone out there is better at your art than you are",
+    authorName: 'Susi',
+    authorCity: 'Berlin',
     timestamp: new Date(),
   },
   {
     id: '4',
     app: AppName.Compass,
     message: 'Is this supposed to be crooked?',
+    authorName: 'Susi',
+    authorCity: 'Berlin',
     timestamp: new Date(),
   },
 ]

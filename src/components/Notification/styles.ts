@@ -37,7 +37,7 @@ export const Metadata = styled.footer`
   margin-bottom: 0.5rem;
 `
 
-export const Time = styled.time`
+export const TimeAndAuthor = styled.div`
   color: rgba(0, 0, 0, 0.75);
   font-weight: 300;
   letter-spacing: 0.5px;

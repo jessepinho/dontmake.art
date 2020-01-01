@@ -14,6 +14,8 @@ interface BaseNotification {
   id: string
   app: AppName
   timestamp: Date
+  authorName: string
+  authorCity: string
 }
 
 interface NotificationWithHeading extends BaseNotification {
