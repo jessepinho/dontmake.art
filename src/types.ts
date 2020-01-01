@@ -5,6 +5,7 @@ export interface App {
 
 export enum AppName {
   Compass = 'Compass',
+  Info = 'Info',
   Tinder = 'Tinder',
   Reminders = 'Reminders',
   WhatsApp = 'WhatsApp',
@@ -14,8 +15,8 @@ interface BaseNotification {
   id: string
   app: AppName
   timestamp: Date
-  authorName: string
-  authorCity: string
+  authorName?: string
+  authorCity?: string
 }
 
 interface NotificationWithHeading extends BaseNotification {

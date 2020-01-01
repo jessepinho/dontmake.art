@@ -1,6 +1,10 @@
 import { App, Notification, AppName } from './types'
 
 export const apps: { [key: string]: App } = {
+  [AppName.Info]: {
+    name: AppName.Info,
+    color: 'rgb(0, 122, 204)',
+  },
   [AppName.Tinder]: {
     name: AppName.Tinder,
     color: 'rgb(234, 104, 102)',
@@ -53,6 +57,14 @@ export const notifications: Notification[] = [
     message: 'Is this supposed to be crooked?',
     authorName: 'Susi',
     authorCity: 'Berlin',
+    timestamp: new Date(),
+  },
+  {
+    id: '0',
+    app: AppName.Info,
+    heading: "Welcome to Don't Make Art!",
+    message:
+      "Don't Make Art! is a way of exorcising your demons of creative self-doubt. Tap this message to read more.",
     timestamp: new Date(),
   },
 ]
