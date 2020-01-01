@@ -17,7 +17,20 @@ export const Main = styled.main`
   bottom: 0;
   left: 0;
 
-  max-width: 600px;
+  @media (min-width: 600px) {
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    height: 100%;
+
+    max-width: 600px;
+
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+  }
 `
 
 export const ClockWrapper = styled.div`
