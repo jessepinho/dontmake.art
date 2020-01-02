@@ -1,5 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
+import { ZIndexes } from '../../constants'
+
 import background from './background.jpg'
 
 export const Main = styled.main`
@@ -63,4 +65,11 @@ export const BackgroundCSS = createGlobalStyle`
 
     overflow: hidden;
   }
+`
+
+export const AddButtonWrapper = styled.div`
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+  z-index: ${ZIndexes.AddButton};
 `

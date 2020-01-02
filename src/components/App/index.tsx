@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import './reset.css'
 
+import AddButton from '../AddButton'
 import Clock from '../Clock'
 import InfoView from '../InfoView'
 import Notification from '../Notification'
@@ -33,6 +34,10 @@ const App: React.FC<{}> = () => {
         </Styles.NotificationsWrapper>
 
         {isInfoViewVisible && <InfoView onClick={hideInfoView} />}
+
+        <Styles.AddButtonWrapper>
+          <AddButton />
+        </Styles.AddButtonWrapper>
       </Styles.Main>
     </>
   )
