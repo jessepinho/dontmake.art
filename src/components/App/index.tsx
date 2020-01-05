@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import './reset.css'
 
 import AddButton from '../AddButton'
+import AddForm from '../AddForm'
 import Clock from '../Clock'
 import InfoView from '../InfoView'
 import Notification from '../Notification'
@@ -13,6 +14,10 @@ const App: React.FC<{}> = () => {
   const [isInfoViewVisible, setIsInfoViewVisible] = useState<boolean>(false)
   const showInfoView = () => setIsInfoViewVisible(true)
   const hideInfoView = () => setIsInfoViewVisible(false)
+
+  const [isAddFormVisible, setIsAddFormVisible] = useState<boolean>(false)
+  const showAddForm = () => setIsAddFormVisible(true)
+  const hideAddForm = () => setIsAddFormVisible(false)
 
   return (
     <>
@@ -38,6 +43,8 @@ const App: React.FC<{}> = () => {
         <Styles.AddButtonWrapper>
           <AddButton />
         </Styles.AddButtonWrapper>
+
+        <AddForm />
       </Styles.Main>
     </>
   )
